@@ -1,0 +1,24 @@
+[project]
+name = "base-fastmcp-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dinhhongkong", email = "dinhhongkong2002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]==0.165.0",
+    "fastmcp==4.2.4",
+    "pydantic==2.14.4",
+    "pydantic-ai==2.71.0",
+    "sqlalchemy==2.1.9",
+    "taskiq==0.13.0",
+]
+
+[project.scripts]
+base-fastmcp-fastapi = "base_fastmcp_fastapi:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
