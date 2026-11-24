@@ -6,12 +6,12 @@ readme = "README.md"
 authors = [
     { name = "dinhhongkong", email = "dinhhongkong2002@gmail.com" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]==0.165.0",
-    "fastmcp==4.2.4",
+    "fastmcp==4.2.5",
     "pydantic==2.14.4",
-    "pydantic-ai==2.71.0",
+    "pydantic-ai==2.73.0",
     "sqlalchemy==2.1.9",
     "taskiq==0.13.0",
 ]
