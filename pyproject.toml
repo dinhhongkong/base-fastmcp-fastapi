@@ -10,14 +10,18 @@ requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]==0.165.0",
     "fastmcp==4.2.5",
+    "psycopg[binary]==3.3.9",
     "pydantic==2.14.4",
     "pydantic-ai==2.73.0",
     "sqlalchemy==2.1.9",
     "taskiq==0.13.0",
 ]
 
+[tool.uv.build-backend]
+module-name = "backend"
+
 [project.scripts]
-base-fastmcp-fastapi = "base_fastmcp_fastapi:main"
+mcp-server ="backend.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]
